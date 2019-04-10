@@ -1,0 +1,76 @@
+﻿<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9E221A1C-AB40-4ED1-BECB-0C7D622BE93C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <NoStandardLibraries>false</NoStandardLibraries>
+    <AssemblyName>ClassLibrary</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>RealActiveRadiators</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Assembly-CSharp, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\Defiant_Zombie.KSP.Skeleton.Assembly-CSharp.1.6.1\lib\Assembly-CSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="UnityEngine, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\Defiant_Zombie.KSP.Skeleton.UnityEngine.1.6.1\lib\UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\Defiant_Zombie.KSP.Skeleton.UnityEngine.UI.1.6.1\lib\UnityEngine.UI.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="GameData\RealActiveRadiators\Parts\zzz_radiator.RAR\diff.dds" />
+    <Content Include="GameData\RealActiveRadiators\Parts\zzz_radiator.RAR\glow.png" />
+    <Content Include="GameData\RealActiveRadiators\Parts\zzz_radiator.RAR\n2_normals3_NRM.dds" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="ModuleRealActiveRadiator.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="GameData\RealActiveRadiators\Chap 6-Refrig Sys for Achiev Cryo Temps_2016.pdf" />
+    <None Include="GameData\RealActiveRadiators\DeprecatedHeatPumpParts.cfg" />
+    <None Include="GameData\RealActiveRadiators\LICENSE" />
+    <None Include="GameData\RealActiveRadiators\Parts\zzz_radiator.RAR\glow.dds.bak" />
+    <None Include="GameData\RealActiveRadiators\Parts\zzz_radiator.RAR\Model.mu" />
+    <None Include="GameData\RealActiveRadiators\Parts\zzz_radiator.RAR\part.cfg" />
+    <None Include="GameData\RealActiveRadiators\README.md" />
+    <None Include="GameData\RealActiveRadiators\RealActiveRadiators.cfg" />
+    <None Include="packages.config" />
+    <None Include="README.md" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSHARP.Targets" />
+  <ProjectExtensions>
+    <VisualStudio AllowExistingFolder="true" />
+  </ProjectExtensions>
+</Project>
